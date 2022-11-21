@@ -26,7 +26,7 @@ const inputStyle = {
   "& label.MuiInputLabel-root": {
     fontFamily: "Overlock",
     fontWeight: 400,
-    fontSize: "2rem",
+    fontSize: "1.8rem",
     marginTop: -0.2,
     transition: "all 0.3s",
   },
@@ -39,8 +39,6 @@ const inputStyle = {
       borderRadius: "2rem",
     },
   },
-  marginBottom: "16px",
-  fontSize: "1.5rem",
   "& div.MuiSelect-select": {
     fontSize: "1.5rem",
     fontWeight: 400,
@@ -83,11 +81,11 @@ export default function ModalAddCar() {
   return (
     <>
       <button className="pattern_button" onClick={() => setOpenModal(true)}>
-        Cadastrar carro
+        + Cadastrar carro
       </button>
       <Modal open={openModal} onClose={() => setOpenModal(false)}>
         <form className="modal_form" onSubmit={handleSubmit}>
-          <h1>Cadastro de novo carro</h1>
+          <h1>CADASTRAR CARRO</h1>
           <TextField
             name="fabricante"
             label="Fabricante"

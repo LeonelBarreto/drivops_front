@@ -43,11 +43,11 @@ export default function ModalAddSell() {
   return (
     <>
       <button className="pattern_button" onClick={() => setOpenModal(true)}>
-        Cadastrar venda
+        + Cadastrar venda
       </button>
       <Modal open={openModal} onClose={() => setOpenModal(false)}>
         <form className="modal_form" onSubmit={handleSubmit}>
-          <h1>Cadastrar Venda</h1>
+          <h1>CADASTRAR VENDA</h1>
           <SelectSeller selectedSeller={form.vendedor} handleChange={handleChange} />
           <SelectCarModel selectedCarModel={form.carro} handleChange={handleChange} />
           <button className="pattern_button">Vender</button>

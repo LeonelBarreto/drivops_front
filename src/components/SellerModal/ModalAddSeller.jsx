@@ -7,18 +7,18 @@ const inputStyle = {
   borderColor: "#000000",
   marginBottom: "20px",
   "& fieldset.MuiOutlinedInput-notchedOutline": {
-    fontSize: "1.8rem",
+    fontSize: "1.0rem",
   },
   "& label.MuiInputLabel-root": {
-    fontFamily: "Overlock",
+    fontFamily: "Open Sans",
     fontWeight: 400,
-    fontSize: "2rem",
+    fontSize: "1.8rem",
     marginTop: -0.2,
     transition: "all 0.3s",
   },
   "& label.Mui-focused": {
-    fontWeight: 700,
-    fontSize: "2rem",
+    fontWeight: 600,
+    fontSize: "1.8rem",
     color: "#000000",
   },
   "& .MuiOutlinedInput-root": {
@@ -26,21 +26,19 @@ const inputStyle = {
       borderColor: "rgba(0, 0, 0, 0.5)",
     },
     "& fieldset": {
-      borderRadius: "2rem",
+      borderRadius: "0.7rem",
     },
   },
-  marginBottom: "16px",
-  fontSize: "1.5rem",
   "& div.MuiSelect-select": {
     fontSize: "1.5rem",
     fontWeight: 400,
   },
   "& .MuiInputBase-root": {
     fontSize: "1.5rem",
-    borderRadius: "2rem",
+    borderRadius: "0.8rem",
   },
   "& .MuiOutlinedInput-notchedOutline": {
-    borderRadius: "2rem",
+    borderRadius: "1.5rem",
   },
 };
 
@@ -75,11 +73,11 @@ export default function ModalAddSeller() {
   return (
     <>
       <button className="pattern_button" onClick={() => setOpenModal(true)}>
-        Cadastrar vendedor
+        + Cadastrar vendedor
       </button>
       <Modal open={openModal} onClose={() => setOpenModal(false)}>
         <form className="modal_form" onSubmit={handleSubmit}>
-          <h1>Cadastrar novo vendedor</h1>
+          <h1>CADASTRAR VENDEDOR</h1>
           <TextField
             name="nome"
             label="Nome"
@@ -89,27 +87,6 @@ export default function ModalAddSeller() {
             type="text"
             sx={inputStyle}
           />
-          {/* <TextField
-            name="idade"
-            label="Idade"
-            fullWidth
-            value={form.idade}
-            onChange={handleChangeInput}
-            type="text"
-            inputProps={{
-              pattern: "[0-9]+$",
-            }}
-            sx={inputStyle}
-          />
-          <TextField
-            name="telefone"
-            label="Número de telefone"
-            fullWidth
-            value={form.telefone}
-            onChange={handleChangeInput}
-            type="text"
-            sx={inputStyle}
-          /> */}
           <button className="pattern_button">Cadastrar</button>
         </form>
       </Modal>
