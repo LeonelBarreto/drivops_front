@@ -14,15 +14,15 @@ export default function Dashboard() {
       <div className="container_dashboard">
         <div className="charts">
           <div className="chart-sellers">
-            <h1>RANKING DE VENDEDORES</h1>
+            <h1>RANKING DE VENDEDORES!</h1>
             <RankingSellers />
           </div>
           <div className="chart-sellers">
-            <h1>VENDAS POR MÊS</h1>
+            <h1>VENDAS POR MÊS!</h1>
             <SalesByMonth />
           </div>
           <div className="chart-sellers">
-            <h1>MÉDIA DOS VALORES POR MÊS</h1>
+            <h1>MÉDIA DOS VALORES POR MÊS!</h1>
               <AvgSalesByMonth />
           </div>
         </div>
